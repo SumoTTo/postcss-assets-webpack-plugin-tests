@@ -1,0 +1,13 @@
+::placeholder {
+  color: gray;
+}
+
+body {
+  background: green;
+}
+
+@media (min-resolution: 2dppx) {
+  body {
+    background: greenyellow;
+  }
+}

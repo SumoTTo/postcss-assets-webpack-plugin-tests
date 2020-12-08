@@ -1,0 +1,41 @@
+{
+  "name": "test-v5",
+  "version": "1.0.0",
+  "description": "Test postcss-assets-webpack-pluyesgin with Webpack 5",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build:v4": "npm run build --prefix tests/test-v4",
+    "build:v5": "npm run build --prefix tests/test-v5",
+    "lint": "eslint .",
+    "fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SumoTTo/postcss-assets-webpack-plugin-tests.git"
+  },
+  "author": "Sigalin Kirill <sumotto@ya.ru> (https://sumotto.ru/)",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.0.4",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "postcss-assets-webpack-plugin": "file:../postcss-assets-webpack-plugin/"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true,
+      "es2021": true
+    },
+    "extends": [
+      "airbnb-base"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 12
+    },
+    "rules": {},
+    "ignorePatterns": ["/**/dist/*"]
+  }
+}
