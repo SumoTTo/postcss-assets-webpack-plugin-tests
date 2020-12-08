@@ -1,7 +1,7 @@
 {
-  "name": "test-v5",
+  "name": "postcss-assets-webpack-plugin-tests",
   "version": "1.0.0",
-  "description": "Test postcss-assets-webpack-pluyesgin with Webpack 5",
+  "description": "Testing postcss-assets-webpack-plugin with supported webpack versions.",
   "main": "webpack.config.js",
   "scripts": {
     "build:v4": "npm run build --prefix tests/test-v4",
@@ -36,6 +36,8 @@
       "ecmaVersion": 12
     },
     "rules": {},
-    "ignorePatterns": ["/**/dist/*"]
+    "ignorePatterns": [
+      "/**/dist/*"
+    ]
   }
 }
